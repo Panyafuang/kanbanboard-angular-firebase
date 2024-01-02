@@ -116,7 +116,7 @@ export class AppComponent {
   }
 
   drop(event: CdkDragDrop<Task[]>): void {
-    const item = event.previousContainer.data[event.previousIndex];
+    const item = event.previousContainer.data[event.previousIndex]; // item that droping
     console.log('item -> ', item);
 
     console.log(event.container.data)
